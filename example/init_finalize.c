@@ -38,6 +38,8 @@ int main(int argc, char **argv){
     /* do something */
     printf("my rank is %d\n", this_proc.rank);
 
+    jtofu_finalize();
+
     PMIx_Finalize(NULL, 0);
 
     return 0;
